@@ -6,7 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ramadan Calendar</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Naem Azam -- The terminal Boy -->
+    <style>
+        /* تنسيقات أساسية لضمان التجاوب */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+            box-sizing: border-box;
+        }
+
+        .hero-wrapper {
+            display: flex;
+            flex-wrap: wrap; /* يسمح بالعناصر بالنزول لسطر جديد في الهاتف */
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .ramadan-text, .ramadan-time {
+            flex: 1 1 300px; /* يتمدد ويتقلص حسب الشاشة */
+        }
+
+        /* تعديل الجداول لتناسب الشاشات الصغيرة */
+        .date-table {
+            width: 100%;
+            overflow-x: auto; /* إضافة شريط تمرير أفقي إذا كان الجدول عريضاً جداً */
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 500px; /* لضمان عدم انضغاط البيانات جداً */
+        }
+
+        /* تحسين مظهر القائمة في الهاتف */
+        .ramadan-dua ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 1.8rem; }
+            .hero-wrapper { flex-direction: column; text-align: center; }
+            .ramadan-time ul { display: inline-block; text-align: left; padding: 0; }
+        }
+    </style>
 </head>
 <body>
     
@@ -31,8 +76,7 @@
                     </div>
                     <ul>
                         <li>sehri <b>- 04:55 PM</b></li>
-                        <li>sunrise <b>- 04:55 PM</b></li>   <!--Example Type your real time Thanks-->
-                        <li>ifter <b>- 04:55 PM</b></li>
+                        <li>sunrise <b>- 04:55 PM</b></li>   <li>ifter <b>- 04:55 PM</b></li>
                     </ul>
                 </div>
             </div>
@@ -53,7 +97,6 @@
                             <th>Sunrise</th>
                             <th>Ifter</th>
                         </tr>
-                        <!--Example Type your Real time-->
                         <tr>
                             <td>01 Ramadan</td>
                             <td>23 March 2026</td>
@@ -62,7 +105,6 @@
                             <td>06:54</td>
                             <td>19:10</td>
                         </tr>
-                        <!--Example Type your Real time-->
                         <tr>
                             <td>02 Ramadan</td>
                             <td>02 March 2026</td>
@@ -71,7 +113,6 @@
                             <td>06:54</td>
                             <td>19:10</td>
                         </tr>
-                        <!--Example Type your Real time-->
                         <tr>
                             <td>03 Ramadan</td>
                             <td>03 March 2026</td>
@@ -80,7 +121,6 @@
                             <td>06:54</td>
                             <td>19:10</td>
                         </tr>
-                        <!--Example Type your Real time-->
                         <tr>
                             <td>04 Ramadan</td>
                             <td>04 March 2026</td>
@@ -89,7 +129,6 @@
                             <td>06:54</td>
                             <td>19:10</td>
                         </tr>
-                        <!--Example Type your Real time-->
                         <tr>
                             <td>05 Ramadan</td>
                             <td>05 March 2026</td>
@@ -98,7 +137,6 @@
                             <td>06:54</td>
                             <td>19:10</td>
                         </tr>
-                        <!--Example Type your Real time-->
                         <tr>
                             <td>06 Ramadan</td>
                             <td>06 March 2026</td>
@@ -107,7 +145,6 @@
                             <td>06:54</td>
                             <td>19:10</td>
                         </tr>
-                        <!--Example Type your Real time-->
                         <tr>
                             <td>07 Ramadan</td>
                             <td>07 March 2026</td>
@@ -116,7 +153,6 @@
                             <td>06:54</td>
                             <td>19:10</td>
                         </tr>
-                        <!--Example Type your Real time-->
                         <tr>
                             <td>08 Ramadan</td>
                             <td>08 March 2026</td>
@@ -125,7 +161,6 @@
                             <td>06:54</td>
                             <td>19:10</td>
                         </tr>
-                        <!--Example Type your Real time-->
                         <tr>
                             <td>09 Ramadan</td>
                             <td>09 March 2026</td>
@@ -134,7 +169,6 @@
                             <td>06:54</td>
                             <td>19:10</td>
                         </tr>
-                        <!--Example Type your Real time-->
                         <tr>
                             <td>10 Ramadan</td>
                             <td>10 March 2026</td>
@@ -157,7 +191,6 @@
                             <th>Sunrise</th>
                             <th>Ifter</th>
                         </tr>
-                        <!--Example Type your Real time-->
                         <tr>
                             <td>11  Ramadan</td>
                             <td>11 March 2026</td>
@@ -166,7 +199,6 @@
                             <td>06:54</td>
                             <td>19:10</td>
                         </tr>
-                        <!--Example Type your Real time-->
                         <tr>
                             <td>12 Ramadan</td>
                             <td>12 March 2026</td>
@@ -175,7 +207,6 @@
                             <td>06:54</td>
                             <td>19:10</td>
                         </tr>
-                        <!--Example Type your Real time-->
                         <tr>
                             <td>13 Ramadan</td>
                             <td>13 March 2026</td>
@@ -184,7 +215,6 @@
                             <td>06:54</td>
                             <td>19:10</td>
                         </tr>
-                        <!--Example Type your Real time-->
                         <tr>
                             <td>14 Ramadan</td>
                             <td>14 March 2026</td>
@@ -193,7 +223,6 @@
                             <td>06:54</td>
                             <td>19:10</td>
                         </tr>
-                        <!--Example Type your Real time-->
                         <tr>
                             <td>15 Ramadan</td>
                             <td>15 March 2026</td>
@@ -202,7 +231,6 @@
                             <td>06:54</td>
                             <td>19:10</td>
                         </tr>
-                        <!--Example Type your Real time-->
                         <tr>
                             <td>16 Ramadan</td>
                             <td>16 March 2026</td>
@@ -211,7 +239,6 @@
                             <td>06:54</td>
                             <td>19:10</td>
                         </tr>
-                        <!--Example Type your Real time-->
                         <tr>
                             <td>17 Ramadan</td>
                             <td>17 March 2026</td>
@@ -220,7 +247,6 @@
                             <td>06:54</td>
                             <td>19:10</td>
                         </tr>
-                        <!--Example Type your Real time-->
                         <tr>
                             <td>18 Ramadan</td>
                             <td>18 March 2026</td>
@@ -229,7 +255,6 @@
                             <td>06:54</td>
                             <td>19:10</td>
                         </tr>
-                        <!--Example Type your Real time-->
                         <tr>
                             <td>19 Ramadan</td>
                             <td>19 March 2026</td>
@@ -238,7 +263,6 @@
                             <td>06:54</td>
                             <td>19:10</td>
                         </tr>
-                        <!--Example Type your Real time-->
                         <tr>
                             <td>20 Ramadan</td>
                             <td>20 March 2026</td>
@@ -261,7 +285,6 @@
                             <th>Sunrise</th>
                             <th>Ifter</th>
                         </tr>
-                        <!--Example Type your Real time-->
                         <tr>
                             <td>21 Ramadan</td>
                             <td>21 March 2026</td>
@@ -270,7 +293,6 @@
                             <td>06:54</td>
                             <td>19:10</td>
                         </tr>
-                        <!--Example Type your Real time-->
                         <tr>
                             <td>22 Ramadan</td>
                             <td>22 March 2026</td>
@@ -279,7 +301,6 @@
                             <td>06:54</td>
                             <td>19:10</td>
                         </tr>
-                        <!--Example Type your Real time-->
                         <tr>
                             <td>23 Ramadan</td>
                             <td>23 March 2026</td>
@@ -288,7 +309,6 @@
                             <td>06:54</td>
                             <td>19:10</td>
                         </tr>
-                        <!--Example Type your Real time-->
                         <tr>
                             <td>24 Ramadan</td>
                             <td>24 March 2026</td>
@@ -297,7 +317,6 @@
                             <td>06:54</td>
                             <td>19:10</td>
                         </tr>
-                        <!--Example Type your Real time-->
                         <tr>
                             <td>25 Ramadan</td>
                             <td>25 March 2026</td>
@@ -306,7 +325,6 @@
                             <td>06:54</td>
                             <td>19:10</td>
                         </tr>
-                        <!--Example Type your Real time-->
                         <tr>
                             <td>26 Ramadan</td>
                             <td>26 March 2026</td>
@@ -315,7 +333,6 @@
                             <td>06:54</td>
                             <td>19:10</td>
                         </tr>
-                        <!--Example Type your Real time-->
                         <tr>
                             <td>27 Ramadan</td>
                             <td>27 March 2026</td>
@@ -324,7 +341,6 @@
                             <td>06:54</td>
                             <td>19:10</td>
                         </tr>
-                        <!--Example Type your Real time-->
                         <tr>
                             <td>28 Ramadan</td>
                             <td>28 March 2026</td>
@@ -333,7 +349,6 @@
                             <td>06:54</td>
                             <td>19:10</td>
                         </tr>
-                        <!--Example Type your Real time-->
                         <tr>
                             <td>29 Ramadan</td>
                             <td>29 March 2026</td>
@@ -342,7 +357,6 @@
                             <td>06:54</td>
                             <td>19:10</td>
                         </tr>
-                        <!--Example Type your Real time-->
                         <tr>
                             <td>30 Ramadan</td>
                             <td>20 March 2026</td>
@@ -387,7 +401,7 @@
                         <hr>
 
                         <h4>Last 10 Days of Seek Refuge with Allah from Hellfire</h4>
-                        <b>راللهم إنك عفوا تحب العفو فاعف عن</b>
+                        <b>واللهم إنك عفوا تحب العفو فاعف عن</b>
                         <p><b>translate :</b>O Allah! You are The One Who pardons greatly, and loves to pardon, so pardon me.</p>
 
                     </li>
@@ -418,6 +432,9 @@
 var dt = new Date();
 document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
 </script>
+</body>
+</html>
 
 </body>
+
 </html>
